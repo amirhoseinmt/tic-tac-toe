@@ -1,9 +1,10 @@
 import './App.css'
+import Box from './components/Box'
 
 function App() {
   return (
     <>
-      Hello World
+      <Box value="X" onClick={null}/>
     </>
   )
 }
