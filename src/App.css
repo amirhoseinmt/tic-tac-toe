@@ -9,6 +9,11 @@ body {
 
 h1 {
   text-align: center;
+  color: #264b56;
+  color: #367588;
+  border: 4px solid #367588;
+  border-radius: 10px;
+  margin-bottom: 40px;
 }
 
 .board {
@@ -28,9 +33,9 @@ h1 {
 }
 
 .right-border {
-  border-right: 0.2em solid #0074a6;
+  border-right: 0.2em solid #18a7b5;
 }
 
 .bottom-border {
-  border-bottom: 0.2em solid #0074a6;
+  border-bottom: 0.2em solid #18a7b5;
 }
