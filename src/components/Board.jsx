@@ -2,7 +2,7 @@ import React from 'react'
 import Tile from './Tile'
 import Strike from './Strike'
 
-const Board = ({ tiles, onTileClick, playerTurn }) => {
+const Board = ({ tiles, onTileClick, playerTurn, strikeClass }) => {
   return (
     <div className='board'>
         <Tile playerTurn={playerTurn} onClick={() => onTileClick(0)} value={tiles[0]} className="right-border bottom-border"/>
@@ -14,7 +14,7 @@ const Board = ({ tiles, onTileClick, playerTurn }) => {
         <Tile playerTurn={playerTurn} onClick={() => onTileClick(6)} value={tiles[6]} className="right-border"/>
         <Tile playerTurn={playerTurn} onClick={() => onTileClick(7)} value={tiles[7]} className="right-border"/>
         <Tile playerTurn={playerTurn} onClick={() => onTileClick(8)} value={tiles[8]} />
-        <Strike />
+        <Strike strikeClass={strikeClass}/>
     </div>
   )
 }
